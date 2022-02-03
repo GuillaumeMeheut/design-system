@@ -5,7 +5,7 @@ import { Color } from '../theme'
 const SignUp: NextPage = () => {
     return (
         <div>
-            <AppButton text={`S'inscrire`} color={Color.primary}></AppButton>
+            {/* <AppButton text={`S'inscrire`} color={Color.primary}></AppButton> */}
         </div >
     )
 }
