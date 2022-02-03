@@ -7,7 +7,6 @@ type Props = {
 };
 
 export const AppButton = ({ text, color, fonts }: Props) => {
-    fonts
     return (
         <button className={css.button} style={
             { ...fonts, ...color }
