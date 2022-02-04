@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import { AppButton } from '../components'
 import css from '../styles/index.module.scss'
-import { Color, Fonts } from '../theme'
+import { ButtonSize, Color, Typography } from '../theme'
 
 const SignIn: NextPage = () => {
     return (
         <div>
-            <AppButton text={"Se connecter"} color={Color.primary} fonts={Fonts.title} />
+            <AppButton text={"Se connecter"} color={Color.primary} fonts={Typography.title} size={ButtonSize.button} />
+
         </div>
     )
 }

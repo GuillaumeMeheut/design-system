@@ -4,12 +4,15 @@ type Props = {
     text: string,
     color: { color: string }
     fonts: { fontSize: string, fontWeight: string }
+    size: any
 };
 
-export const AppButton = ({ text, color, fonts }: Props) => {
+export const AppButton = ({ text, color, fonts, size }: Props) => {
+    console.log({ ...fonts, ...color, ...size });
+
     return (
         <button className={css.button} style={
-            { ...fonts, ...color }
+            { ...fonts, ...color, ...size }
         }>{text}</button>
     )
 }
