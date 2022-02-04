@@ -6,7 +6,7 @@ export const Typography = {
 
 export const ButtonSize = {
   button: {
-    width: "100px",
+    padding: "0px 30px",
     height: "40px",
     borderRadius: "10px",
   },
