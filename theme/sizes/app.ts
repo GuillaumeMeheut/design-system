@@ -6,12 +6,11 @@ export const Typography = {
 
 export const ButtonSize = {
   button: {
-    padding: "0px 30px",
-    height: "40px",
+    padding: "10px 98px",
     borderRadius: "10px",
   },
 };
 
 export const InputSize = {
-  input: { maxWidth: "200px", height: "50px" },
+  input: { minWidth: "250px", height: "39px", padding: "9px 24px" },
 };

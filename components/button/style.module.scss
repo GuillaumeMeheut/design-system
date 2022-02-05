@@ -1,3 +1,9 @@
+@use "../../styles/variable";
 .button {
   cursor: pointer;
+  background-color: variable.$primary;
+
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
 }
