@@ -1,4 +1,6 @@
+import { ColorBg } from '../../theme';
 import css from './style.module.scss'
+
 
 type Props = {
     text: string,
@@ -8,11 +10,11 @@ type Props = {
 };
 
 export const AppButton = ({ text, color, fonts, size }: Props) => {
-    console.log({ ...fonts, ...color, ...size });
-
     return (
         <button className={css.button} style={
-            { ...fonts, ...color, ...size }
-        }>{text}</button>
+            { ...fonts, ...color, ...size, ...ColorBg.tertiary }
+        }>
+            {text}
+        </button>
     )
 }

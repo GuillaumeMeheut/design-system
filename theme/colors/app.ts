@@ -7,3 +7,12 @@ export const Color = {
   light: { color: "#F2F2F2" },
   white: { color: "#FFFFFF" },
 };
+export const ColorBg = {
+  primary: { background: "#0B0B0F" },
+  secondary: { background: "#278EA5" },
+  danger: { background: "#FF3D3D" },
+  tertiary: { background: "#21E6C1" },
+  dark: { background: "#000000" },
+  light: { background: "#F2F2F2" },
+  white: { background: "#FFFFFF" },
+};
