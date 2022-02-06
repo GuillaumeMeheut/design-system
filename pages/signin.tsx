@@ -4,6 +4,9 @@ import css from '../styles/signin.module.scss'
 import { ButtonSize, Color, InputSize, Typography } from '../theme'
 
 const SignIn: NextPage = () => {
+    const validation = () => {
+        console.log('proc');
+    }
     return (
         <div className={css.page}>
             <div className={css.bgContainer}>
@@ -22,7 +25,7 @@ const SignIn: NextPage = () => {
                     <a href="/forgot-password" style={{ alignSelf: "flex-start" }}>
                         <AppText Tag={'a'} text={"Forgot password? "} color={Color.tertiary} fonts={Typography.paraSmall} />
                     </a>
-                    <AppButton text={"Sign In"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} />
+                    <AppButton text={"Sign In"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} onClick={() => validation()} />
 
                 </div>
             </div>

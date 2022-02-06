@@ -4,6 +4,9 @@ import css from '../styles/index.module.scss'
 import { ButtonSize, Color, InputSize, Typography } from '../theme'
 
 const SignUp: NextPage = () => {
+    const validation = () => {
+        console.log('proc');
+    }
     return (
         <div className={css.page}>
             <div className={css.bgContainer}>
@@ -20,7 +23,7 @@ const SignUp: NextPage = () => {
                     <AppInput label={"Email"} labelColor={Color.black} id={"email"} password={false} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
                     <AppInput label={"Password"} labelColor={Color.black} id={"password"} password={true} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
 
-                    <AppButton text={"Sign Up"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} />
+                    <AppButton text={"Sign Up"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} onClick={() => validation()} />
 
                 </div>
             </div>

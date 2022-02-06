@@ -4,6 +4,11 @@ import css from '../styles/forgot-password.module.scss'
 import { ButtonSize, Color, InputSize, Typography } from '../theme'
 
 const ForgotPassword: NextPage = () => {
+
+    const validation = () => {
+        console.log('proc');
+    }
+
     return (
         <div className={css.page}>
             <div className={css.bgContainer}>
@@ -18,7 +23,7 @@ const ForgotPassword: NextPage = () => {
                             <AppText Tag={'a'} text={"Sign In"} color={Color.tertiary} fonts={Typography.para} />
                         </a></div>
                     <AppInput label={"Password"} labelColor={Color.white} id={"password"} password={true} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
-                    <AppButton text={"Send"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} />
+                    <AppButton text={"Send"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} onClick={() => validation()} />
 
                 </div>
             </div>
