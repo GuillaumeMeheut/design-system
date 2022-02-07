@@ -19,9 +19,8 @@ const ForgotPassword: NextPage = () => {
                         <div style={{ marginRight: "5px" }}>
                             <AppText Tag={'p'} text={"Return to "} color={Color.white} fonts={Typography.para} />
                         </div>
-                        <a href="/signin">
-                            <AppText Tag={'a'} text={"Sign In"} color={Color.tertiary} fonts={Typography.para} />
-                        </a></div>
+                        <AppText Tag={'a'} href="/signin" text={"Sign In"} color={Color.tertiary} fonts={Typography.para} />
+                    </div>
                     <AppInput label={"Password"} labelColor={Color.white} id={"password"} password={true} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
                     <AppButton text={"Send"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} onClick={() => validation()} />
 

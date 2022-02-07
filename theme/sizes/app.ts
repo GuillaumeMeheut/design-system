@@ -8,6 +8,7 @@ export const ButtonSize = {
   button: {
     padding: "10px 98px",
     borderRadius: "10px",
+    minWidth: "250px",
   },
 };
 

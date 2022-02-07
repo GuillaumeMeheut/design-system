@@ -5,11 +5,12 @@ type Props = {
     text: string,
     color: { color: string }
     fonts: { fontSize: string, fontWeight: string }
+    href?: string
 };
 
-export const AppText = ({ Tag, text, color, fonts }: Props) => {
+export const AppText = ({ Tag, text, color, fonts, href }: Props) => {
     return (
-        <Tag className={css.text} style={
+        <Tag href={href} className={css.text} style={
             { ...fonts, ...color }
         }>{text}</Tag>
     )
