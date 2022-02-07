@@ -6,8 +6,11 @@
   border: none;
   border-radius: 10px;
   font-weight: 600;
+
+  width: 100%;
+  transition: 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: variable.$dark;
+  background-color: variable.$primary--hover;
 }

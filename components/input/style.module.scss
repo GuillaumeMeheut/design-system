@@ -11,11 +11,11 @@
   background-color: variable.$light;
   outline: none;
   border: none;
-  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: variable.$boxShadow;
   border-radius: 5px;
 }
 .input:focus {
-  border: 2px solid rgba(31, 66, 135, 0.6);
+  border: 2px solid variable.$primary--focus;
 }
 
 .button {
