@@ -19,8 +19,8 @@ const SignUp: NextPage = () => {
                         </div>
                         <AppText Tag={'a'} href="/signin" text={"Sign in"} color={Color.tertiary} fonts={Typography.para} />
                     </div>
-                    <AppInput label={"Email"} labelColor={Color.white} id={"email"} password={false} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
-                    <AppInput label={"Password"} labelColor={Color.white} id={"password"} password={true} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
+                    <AppInput label={"Email"} placeholder='email@gmail.com' labelColor={Color.white} id={"email"} password={false} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
+                    <AppInput label={"Password"} placeholder='*********' labelColor={Color.white} id={"password"} password={true} color={Color.primary} fonts={Typography.para} size={InputSize.input} />
                     <AppButton text={"Sign Up"} color={Color.white} fonts={Typography.para} size={ButtonSize.button} onClick={() => validation()} />
 
                 </div>
