@@ -13,6 +13,8 @@
   border: none;
   box-shadow: variable.$boxShadow;
   border-radius: 5px;
+
+  border: 2px solid variable.$light;
 }
 .input:focus {
   border: 2px solid variable.$primary--focus;
